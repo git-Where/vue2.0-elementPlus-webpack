@@ -23,7 +23,7 @@
       :columns="columns"
       :data="tableData"
       :pagination="{
-        currentPage: defalutParams.pageIndex,
+        currentPage: defaultParams.pageIndex,
         total: total,
         onSizeChange: handleSizeChange,
         onCurrentChange: handleCurrentChange
@@ -131,7 +131,7 @@ export default {
     async getExampleList(data) {
       try {
         const res = await getExampleListApi({
-          params: Object.assign(this.defalutParams, data || {})
+          params: Object.assign(this.defaultParams, data || {})
         })
         if (res) {
           this.total = res.data.total

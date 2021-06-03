@@ -107,7 +107,7 @@ export const asyncRouterMap = [
   {
     path: '/components-demo',
     component: Layout,
-    redirect: 'noredirect',
+    redirect: '/components-demo/echarts',
     name: 'ComponentsDemo',
     alwaysShow: true,
     meta: {
@@ -232,7 +232,7 @@ export const asyncRouterMap = [
   {
     path: '/table-demo',
     component: Layout,
-    redirect: '/table-demo/basic-usage',
+    redirect: '/table-demo/basic-table',
     name: 'TableDemo',
     alwaysShow: true,
     meta: {
@@ -405,7 +405,7 @@ export const asyncRouterMap = [
   {
     path: '/components-ui',
     component: Layout,
-    redirect: 'noredirect',
+    redirect: '/components-ui/waves',
     name: 'ComponentsUi',
     alwaysShow: true,
     meta: {
@@ -516,6 +516,7 @@ export const asyncRouterMap = [
     path: '/example-demo',
     component: Layout,
     name: 'ExampleDemo',
+    redirect: '/example-demo/example-dialog',
     alwaysShow: true,
     meta: {
       icon: 'example',
@@ -586,6 +587,7 @@ export const asyncRouterMap = [
     path: '/role-demo',
     component: Layout,
     name: 'RoleDemo',
+    redirect: '/role-demo/user',
     alwaysShow: true,
     meta: {
       icon: 'user',
@@ -613,7 +615,7 @@ export const asyncRouterMap = [
   {
     path: '/other',
     component: Layout,
-    redirect: 'noredirect',
+    redirect: '/other/external-link',
     name: 'Other',
     alwaysShow: true,
     meta: {

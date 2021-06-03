@@ -10,7 +10,7 @@
 
     <editor
       ref="editor"
-      v-model="content"
+      :value="content"
       @change="handleChange"
     />
 

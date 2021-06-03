@@ -88,7 +88,7 @@ const requiredRule = {
 }
 
 export default {
-  name: 'IfnoWrite2',
+  name: 'InfoWrite2',
   props: {
     info: {
       type: Object,

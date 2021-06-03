@@ -57,7 +57,7 @@ export default {
     this.editor.customConfig.onchange = (html) => {
       const text = this.editor.txt.text()
       if (this.cache) localStorage.editorCache = html
-      this.$emit('input', this.valueType === 'html' ? html : text)
+      // this.$emit('input', this.valueType === 'html' ? html : text)
       this.$emit('change', html, text)
     }
     // 自定义菜单配置

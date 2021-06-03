@@ -5,7 +5,7 @@ const app = {
     showTags: true, // 是否显示标签栏
     showNavbar: true, // 是否显示navbar
     fixedHeader: true, // 是否固定header
-    layout: 'Top', // layout布局
+    layout: 'Classic', // layout布局
     showBreadcrumb: true, // 是否显示面包屑
     showHamburger: true, // 是否显示侧边栏缩收按钮
     showScreenfull: true, // 是否全屏按钮
@@ -14,7 +14,8 @@ const app = {
     logoTitle: 'vue-ele-admin', // logo标题
     userInfo: 'userInfo', // 登录信息存储字段-建议每个项目换一个字段，避免与其他项目冲突
     greyMode: false, // 是否开始灰色模式，用于特殊悼念日
-    showBackTop: true // 是否显示回到顶部
+    showBackTop: true, // 是否显示回到顶部
+    showMenuTab: false // 是否固定一级菜单
   },
   mutations: {
     SET_COLLAPSED: (state, collapsed) => {
@@ -58,6 +59,9 @@ const app = {
     },
     SET_SHOWBACKTOP: (state, showBackTop) => {
       state.showBackTop = showBackTop
+    },
+    SET_SHOWMENUTAB: (state, showMenuTab) => {
+      state.showMenuTab = showMenuTab
     }
   },
   actions: {
@@ -102,6 +106,9 @@ const app = {
     },
     SetShowBackTop({ commit }, showBackTop) {
       commit('SET_SHOWBACKTOP', showBackTop)
+    },
+    SetShowMenuTab({ commit }, showMenuTab) {
+      commit('SET_SHOWMENUTAB', showMenuTab)
     }
   }
 }

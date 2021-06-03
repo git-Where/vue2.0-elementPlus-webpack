@@ -450,7 +450,7 @@ export const checkedkeys = ['/dashboard', 'http://192.168.169.57/ue/2019/doc/vue
   'http://192.168.169.57/ue/2019/doc/vue-standard/dist/scheme/changLog.html', '/components-demo',
   '/components-demo/echarts', '/components-demo/preview', '/components-demo/message', '/components-demo/search',
   '/components-demo/editor', '/components-demo/markdown', '/components-demo/dialog', '/components-demo/more',
-  '/components-demo/detail', '/components-demo/select-tree', '/components-demo/cropper', '/components-demo/qrcode', '/components-demo/avatars', '/components-demo/highlight', '/table-demo',
+  '/components-demo/detail', '/components-demo/select-tree', '/components-demo/cropper', '/components-demo/qrcode', '/components-demo/avatars', '/components-demo/highlight', '/components-demo/wordcloud', '/table-demo',
   '/table-demo/basic-table', '/table-demo/page-table', '/table-demo/stripe-table', '/table-demo/border-table',
   '/table-demo/state-table', '/table-demo/fixed-header', '/table-demo/fixed-column',
   '/table-demo/fixed-column-header', '/table-demo/fluid-height', '/table-demo/multi-header',

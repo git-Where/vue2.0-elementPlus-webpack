@@ -12,6 +12,8 @@ const permission = {
   state: {
     routers: [],
     addRouters: [],
+    menuTabRouters: [],
+    activeTab: '',
     isAddRouters: false
   },
   mutations: {
@@ -29,6 +31,12 @@ const permission = {
     },
     SET_ISADDROUTERS: (state, isAddRouters) => {
       state.isAddRouters = isAddRouters
+    },
+    SET_MENUTABROUTERS: (state, menuTabRouters) => {
+      state.menuTabRouters = menuTabRouters
+    },
+    SET_ACTIVETAB: (state, activeTab) => {
+      state.activeTab = activeTab
     }
   },
   actions: {
@@ -49,6 +57,12 @@ const permission = {
     },
     SetIsAddRouters({ commit }, isAddRouters) {
       commit('SET_ISADDROUTERS', isAddRouters)
+    },
+    SetMenuTabRouters({ commit }, menuTabRouters) {
+      commit('SET_MENUTABROUTERS', menuTabRouters)
+    },
+    SetAcitveTab({ commit }, activeTab) {
+      commit('SET_ACTIVETAB', activeTab)
     }
   }
 }

@@ -1,13 +1,9 @@
 {
   "name": "vue-element-admin2.0",
-  "version": "0.9.7",
+  "version": "0.10.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "dev:index": "cross-env PROJECT_NAME=index vue-cli-service serve",
-    "build-dev:index": "cross-env PROJECT_NAME=index vue-cli-service build --mode development",
-    "build-test:index": "cross-env PROJECT_NAME=index vue-cli-service build --mode test",
-    "build-pro:index": "cross-env PROJECT_NAME=index vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "all": "npm run dev && npm run build && npm run test",
@@ -17,7 +13,6 @@
     "clean": "npx rimraf node_modules"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
     "axios": "^0.18.0",
     "clipboard": "^2.0.4",
     "codemirror": "^5.49.2",

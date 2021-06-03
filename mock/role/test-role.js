@@ -4,7 +4,7 @@ export const checkedRoleNodes = [{
   'name': 'ComponentsDemo',
   'hidden': false,
   'alwaysShow': true,
-  'redirect': 'noredirect',
+  'redirect': '/components-demo/echarts',
   'component': '#',
   'meta': {
     'icon': 'component'
@@ -126,6 +126,15 @@ export const checkedRoleNodes = [{
     'redirect': '',
     'component': 'pages/index/views/components-demo/avatars/index.vue',
     'meta': {}
+  }, {
+    'path': 'wordcloud',
+    'hidden': false,
+    'title': '词云组件',
+    'name': 'WordcloudDemo',
+    'alwaysShow': false,
+    'redirect': '',
+    'component': 'pages/index/views/components-demo/wordcloud/index.vue',
+    'meta': {}
   }]
 }, {
   'path': '/table-demo',
@@ -133,7 +142,7 @@ export const checkedRoleNodes = [{
   'name': 'TableDemo',
   'hidden': false,
   'alwaysShow': true,
-  'redirect': '/table-demo/basic-usage',
+  'redirect': '/table-demo/basic-table',
   'component': '#',
   'meta': {
     'icon': 'table'
@@ -325,7 +334,7 @@ export const checkedRoleNodes = [{
   'name': 'ComponentsUi',
   'hidden': false,
   'alwaysShow': true,
-  'redirect': 'noredirect',
+  'redirect': '/components-ui/waves',
   'component': '#',
   'meta': {
     'icon': 'UI'
@@ -363,7 +372,7 @@ export const checkedRoleNodes = [{
   'title': '图标',
   'hidden': false,
   'alwaysShow': false,
-  'redirect': '',
+  'redirect': '/icon/index',
   'component': '#',
   'meta': {
     'icon': 'icon'
@@ -445,7 +454,7 @@ export const checkedRoleNodes = [{
   'name': 'ExampleDemo',
   'hidden': false,
   'alwaysShow': true,
-  'redirect': '',
+  'redirect': '/example-demo/example-dialog',
   'component': '#',
   'meta': {
     'icon': 'example'
@@ -517,7 +526,7 @@ export const checkedRoleNodes = [{
   'name': 'RoleDemo',
   'hidden': false,
   'alwaysShow': true,
-  'redirect': '',
+  'redirect': '/role-demo/user',
   'component': '#',
   'meta': {
     'icon': 'user'
@@ -547,7 +556,7 @@ export const checkedRoleNodes = [{
   'name': 'Other',
   'hidden': false,
   'alwaysShow': true,
-  'redirect': 'noredirect',
+  'redirect': '/other/external-link',
   'component': '#',
   'meta': {
     'icon': 'international'

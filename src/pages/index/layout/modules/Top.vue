@@ -71,14 +71,14 @@
 import { mapGetters } from 'vuex'
 
 import AppMain from '../components/AppMain'
-import TagsView from '_c/TagsView'
-import Logo from '_c/Logo'
-import Sider from '_c/Sider'
-import Screenfull from '_c/Screenfull'
-import UserInfo from '_c/UserInfo'
+import TagsView from '../components/TagsView'
+import Logo from '../components/Logo'
+import Sider from '../components/Sider'
+import Screenfull from '../components/Screenfull'
+import UserInfo from '../components/UserInfo'
 
-import Setting from '_c/Setting'
-import Backtop from '_c/Backtop'
+import Setting from '../components/Setting'
+import Backtop from '../components/Backtop'
 export default {
   name: 'Top',
   components: {

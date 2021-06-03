@@ -4,7 +4,7 @@ export default {
   data() {
     return {
       // 请求接口的基本参数
-      defalutParams: {
+      defaultParams: {
         pageIndex: 1,
         pageSize: 10
       },
@@ -35,14 +35,14 @@ export default {
     // 表格展示条目改变时候重置基本参数
     sizeChange(val) {
       this.loading = true
-      this.defalutParams.pageIndex = 1
-      this.defalutParams.pageSize = val
+      this.defaultParams.pageIndex = 1
+      this.defaultParams.pageSize = val
     },
 
     // 表格分页改变时候重置基本参数
     currentChange(val) {
       this.loading = true
-      this.defalutParams.pageIndex = val
+      this.defaultParams.pageIndex = val
     },
 
     // 删除多选

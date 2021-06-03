@@ -71,7 +71,7 @@ const requiredRule = {
 }
 
 export default {
-  name: 'IfnoWrite',
+  name: 'InfoWrite',
   components: {
     Editor
   },
