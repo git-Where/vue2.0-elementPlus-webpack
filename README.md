@@ -1,9 +1,9 @@
 # 介绍
 
 ```
-main基于多页开发模板
-single-page基于单页开发模板
-devTemplate基于开发基础模板
+main--基于多页开发模板
+single-page--基于单页开发模板
+devTemplate--基于开发基础模板
 ```
 
 [vue-element-admin 2.0](http://192.168.169.57:9000/scm/git/hzt-webdocs.git)是一个基于[vue2.x](https://github.com/vuejs/vue)、[vue-cli4.x](https://github.com/vuejs/vue-cli)、[element-ui](https://github.com/ElemeFE/element)的后台解决方案，借鉴了[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)和[iview-admin](https://github.com/iview/iview-admin)的写法和优点。内置了动态路由，权限验证，典型的业务模型，丰富的功能组件，并且提供了多页配置，开箱即用，可以用来作为项目的启动模版。它可以帮助你快速搭建企业级中后台产品原型，也可以作为一个示例，用于学习。
