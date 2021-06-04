@@ -16,7 +16,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/echarts/index.vue',
+    'component': 'views/components-demo/echarts/index.vue',
     'meta': {}
   }, {
     'path': 'preview',
@@ -25,7 +25,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/preview/index.vue',
+    'component': 'views/components-demo/preview/index.vue',
     'meta': {}
   }, {
     'path': 'message',
@@ -34,7 +34,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/message/index.vue',
+    'component': 'views/components-demo/message/index.vue',
     'meta': {}
   }, {
     'path': 'search',
@@ -43,7 +43,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/search/index.vue',
+    'component': 'views/components-demo/search/index.vue',
     'meta': {}
   }, {
     'path': 'editor',
@@ -52,7 +52,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/editor/index.vue',
+    'component': 'views/components-demo/editor/index.vue',
     'meta': {}
   }, {
     'path': 'markdown',
@@ -61,7 +61,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/markdown/index.vue',
+    'component': 'views/components-demo/markdown/index.vue',
     'meta': {}
   }, {
     'path': 'dialog',
@@ -70,7 +70,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/dialog/index.vue',
+    'component': 'views/components-demo/dialog/index.vue',
     'meta': {}
   }, {
     'path': 'more',
@@ -79,7 +79,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/more/index.vue',
+    'component': 'views/components-demo/more/index.vue',
     'meta': {}
   }, {
     'path': 'detail',
@@ -88,7 +88,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/detail/index.vue',
+    'component': 'views/components-demo/detail/index.vue',
     'meta': {}
   }, {
     'path': 'select-tree',
@@ -97,7 +97,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/select-tree/index.vue',
+    'component': 'views/components-demo/select-tree/index.vue',
     'meta': {}
   }, {
     'path': 'cropper',
@@ -106,7 +106,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/cropper/index.vue',
+    'component': 'views/components-demo/cropper/index.vue',
     'meta': {}
   }, {
     'path': 'qrcode',
@@ -115,7 +115,7 @@ export const checkedRoleNodes = [{
     'name': 'QrcodeDemo',
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/qrcode/index.vue',
+    'component': 'views/components-demo/qrcode/index.vue',
     'meta': {}
   }, {
     'path': 'avatars',
@@ -124,7 +124,7 @@ export const checkedRoleNodes = [{
     'name': 'AvatarsDemo',
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/avatars/index.vue',
+    'component': 'views/components-demo/avatars/index.vue',
     'meta': {}
   }, {
     'path': 'wordcloud',
@@ -133,7 +133,7 @@ export const checkedRoleNodes = [{
     'name': 'WordcloudDemo',
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-demo/wordcloud/index.vue',
+    'component': 'views/components-demo/wordcloud/index.vue',
     'meta': {}
   }]
 }, {
@@ -154,7 +154,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/basic-table/index.vue',
+    'component': 'views/table-demo/basic-table/index.vue',
     'meta': {}
   }, {
     'path': 'page-table',
@@ -163,7 +163,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/page-table/index.vue',
+    'component': 'views/table-demo/page-table/index.vue',
     'meta': {}
   }, {
     'path': 'stripe-table',
@@ -172,7 +172,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/stripe-table/index.vue',
+    'component': 'views/table-demo/stripe-table/index.vue',
     'meta': {}
   }, {
     'path': 'border-table',
@@ -181,7 +181,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/border-table/index.vue',
+    'component': 'views/table-demo/border-table/index.vue',
     'meta': {}
   }, {
     'path': 'state-table',
@@ -190,7 +190,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/state-table/index.vue',
+    'component': 'views/table-demo/state-table/index.vue',
     'meta': {}
   }, {
     'path': 'fixed-header',
@@ -199,7 +199,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/fixed-header/index.vue',
+    'component': 'views/table-demo/fixed-header/index.vue',
     'meta': {}
   }, {
     'path': 'fixed-column',
@@ -208,7 +208,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/fixed-column/index.vue',
+    'component': 'views/table-demo/fixed-column/index.vue',
     'meta': {}
   }, {
     'path': 'fixed-column-header',
@@ -217,7 +217,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/fixed-column-header/index.vue',
+    'component': 'views/table-demo/fixed-column-header/index.vue',
     'meta': {}
   }, {
     'path': 'fluid-height',
@@ -226,7 +226,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/fluid-height/index.vue',
+    'component': 'views/table-demo/fluid-height/index.vue',
     'meta': {}
   }, {
     'path': 'multi-header',
@@ -235,7 +235,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/multi-header/index.vue',
+    'component': 'views/table-demo/multi-header/index.vue',
     'meta': {}
   }, {
     'path': 'single-choice',
@@ -244,7 +244,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/single-choice/index.vue',
+    'component': 'views/table-demo/single-choice/index.vue',
     'meta': {}
   }, {
     'path': 'multiple-choice',
@@ -253,7 +253,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/multiple-choice/index.vue',
+    'component': 'views/table-demo/multiple-choice/index.vue',
     'meta': {}
   }, {
     'path': 'sort-table',
@@ -262,7 +262,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/sort-table/index.vue',
+    'component': 'views/table-demo/sort-table/index.vue',
     'meta': {}
   }, {
     'path': 'screen-table',
@@ -271,7 +271,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/screen-table/index.vue',
+    'component': 'views/table-demo/screen-table/index.vue',
     'meta': {}
   }, {
     'path': 'expand-row',
@@ -280,7 +280,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/expand-row/index.vue',
+    'component': 'views/table-demo/expand-row/index.vue',
     'meta': {}
   }, {
     'path': 'tree-and-load',
@@ -289,7 +289,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/tree-and-load/index.vue',
+    'component': 'views/table-demo/tree-and-load/index.vue',
     'meta': {}
   }, {
     'path': 'custom-header',
@@ -298,7 +298,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/custom-header/index.vue',
+    'component': 'views/table-demo/custom-header/index.vue',
     'meta': {}
   }, {
     'path': 'total-table',
@@ -307,7 +307,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/total-table/index.vue',
+    'component': 'views/table-demo/total-table/index.vue',
     'meta': {}
   }, {
     'path': 'merge-table',
@@ -316,7 +316,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/merge-table/index.vue',
+    'component': 'views/table-demo/merge-table/index.vue',
     'meta': {}
   }, {
     'path': 'custom-index',
@@ -325,7 +325,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/table-demo/custom-index/index.vue',
+    'component': 'views/table-demo/custom-index/index.vue',
     'meta': {}
   }]
 }, {
@@ -346,7 +346,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-ui/waves/index.vue',
+    'component': 'views/components-ui/waves/index.vue',
     'meta': {}
   }, {
     'path': 'ripples',
@@ -355,7 +355,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-ui/ripples/index.vue',
+    'component': 'views/components-ui/ripples/index.vue',
     'meta': {}
   }, {
     'path': 'streamer',
@@ -364,7 +364,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/components-ui/streamer/index.vue',
+    'component': 'views/components-ui/streamer/index.vue',
     'meta': {}
   }]
 }, {
@@ -372,7 +372,7 @@ export const checkedRoleNodes = [{
   'title': '图标',
   'hidden': false,
   'alwaysShow': false,
-  'redirect': '/icon/index',
+  'redirect': '/other/index',
   'component': '#',
   'meta': {
     'icon': 'icon'
@@ -384,7 +384,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/icons/index.vue',
+    'component': 'views/icons/index.vue',
     'meta': {
       'icon': 'icon'
     }
@@ -425,7 +425,7 @@ export const checkedRoleNodes = [{
         'hidden': false,
         'alwaysShow': false,
         'redirect': '',
-        'component': 'pages/index/views/level/Menu111.vue',
+        'component': 'views/level/Menu111.vue',
         'meta': {}
       }]
     }, {
@@ -435,7 +435,7 @@ export const checkedRoleNodes = [{
       'hidden': false,
       'alwaysShow': false,
       'redirect': '',
-      'component': 'pages/index/views/level/Menu12.vue',
+      'component': 'views/level/Menu12.vue',
       'meta': {}
     }]
   }, {
@@ -445,7 +445,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/level/Menu2.vue',
+    'component': 'views/level/Menu2.vue',
     'meta': {}
   }]
 }, {
@@ -466,7 +466,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/example-demo/example-dialog/index.vue',
+    'component': 'views/example-demo/example-dialog/index.vue',
     'meta': {}
   }, {
     'path': 'example-page',
@@ -475,7 +475,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/example-demo/example-page/index.vue',
+    'component': 'views/example-demo/example-page/index.vue',
     'meta': {}
   }, {
     'path': 'example-add',
@@ -484,7 +484,7 @@ export const checkedRoleNodes = [{
     'hidden': true,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/example-demo/example-page/example-add.vue',
+    'component': 'views/example-demo/example-page/example-add.vue',
     'meta': {
       'noCache': true,
       'noTagsView': true,
@@ -498,7 +498,7 @@ export const checkedRoleNodes = [{
     'hidden': true,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/example-demo/example-page/example-edit.vue',
+    'component': 'views/example-demo/example-page/example-edit.vue',
     'meta': {
       'noCache': true,
       'noTagsView': true,
@@ -512,7 +512,7 @@ export const checkedRoleNodes = [{
     'hidden': true,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/example-demo/example-page/example-detail.vue',
+    'component': 'views/example-demo/example-page/example-detail.vue',
     'meta': {
       'noCache': true,
       'noTagsView': true,
@@ -538,7 +538,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/role-demo/user/index.vue',
+    'component': 'views/role-demo/user/index.vue',
     'meta': {}
   }, {
     'path': 'role',
@@ -547,7 +547,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/role-demo/role/index.vue',
+    'component': 'views/role-demo/role/index.vue',
     'meta': {}
   }]
 }, {
@@ -568,7 +568,7 @@ export const checkedRoleNodes = [{
     'hidden': false,
     'alwaysShow': false,
     'redirect': '',
-    'component': 'pages/index/views/other/external-link.vue',
+    'component': 'views/other/external-link.vue',
     'meta': {}
   }]
 }]

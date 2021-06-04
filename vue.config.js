@@ -1,11 +1,5 @@
 const path = require('path')
 
-const glob = require('glob')
-
-const pagesConfig = require('./pages.config')
-
-const projectName = process.env.PROJECT_NAME // 获取package.json中scripts配置的变量
-
 // gzip压缩
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 // 代码压缩
@@ -15,26 +9,7 @@ const resolve = dir => {
   return path.join(__dirname, dir)
 }
 
-const pages = {}
-
-let entryPages = {}
-
-glob.sync('./src/pages/**/main.js').forEach(entry => {
-  const chunk = entry.match(/\.\/src\/pages\/(.*)\/main\.js/)[1]
-  const curr = pagesConfig[chunk]
-  if (curr) {
-    pages[chunk] = {
-      entry,
-      ...curr,
-      chunks: process.env.NODE_ENV === 'production' ? ['chunk-libs', 'chunk-elementUI', 'chunk-commons', 'runtime', chunk] : ['chunk-vendors', 'chunk-common', chunk]
-    }
-  }
-})
-
-projectName ? entryPages[projectName] = pages[projectName] : entryPages = pages
-
 module.exports = {
-  pages: entryPages,
   publicPath: './',
   // 如果你不需要使用eslint，把lintOnSave设为false即可
   lintOnSave: true,
@@ -51,8 +26,7 @@ module.exports = {
 
     config.resolve.alias
       .set('_c', resolve('src/components')) // key,value自行定义，比如.set('@@', resolve('src/components'))
-      .set('_@', resolve('src/pages/index'))
-      .set('_v', resolve('src/pages/index/views'))
+      .set('_v', resolve('src/views'))
 
     // set svg-sprite-loader
     config.module
@@ -147,16 +121,14 @@ module.exports = {
 
       config.optimization.runtimeChunk('single')
 
-      Object.keys(entryPages).forEach(page => {
-        // 预加载
-        config.plugin(`preload-${page}`).tap(() => [{
-          rel: 'preload',
-          fileBlacklist: [/\.map$/, /hot-update\.js$/, /runtime\..*\.js$/],
-          include: 'initial'
-        }])
-
-        config.plugins.delete(`prefetch-${page}`)
-      })
+      // 预加载
+      config.plugin(`preload`).tap(() => [{
+        rel: 'preload',
+        fileBlacklist: [/\.map$/, /hot-update\.js$/, /runtime\..*\.js$/],
+        include: 'initial'
+      }])
+      
+      config.plugins.delete(`prefetch`)
     })
   },
   configureWebpack: {
