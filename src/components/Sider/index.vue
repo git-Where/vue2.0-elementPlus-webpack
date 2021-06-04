@@ -12,7 +12,7 @@
         @select="selectMenu"
       >
         <sidebar-item
-          v-for="route in showMenuTab ? menuTabRouters : routers"
+          v-for="route in routers"
           :key="route.path"
           :item="route"
           :layout="layout"
@@ -44,10 +44,7 @@ export default {
     ...mapGetters([
       'routers',
       'collapsed',
-      'showLogo',
-      'menuTabRouters',
-      'showMenuTab',
-      'activeTab'
+      'showLogo'
     ]),
     activeMenu() {
       const route = this.$route

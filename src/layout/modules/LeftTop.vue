@@ -22,8 +22,8 @@
           :collapsed="collapsed"
         />
       </div>
-      <div v-if="showMenuTab" class="menu__tab--top sidebar__item--Top">
-        <menu-tab />
+      <div v-if="layout === 'Top'" class="sidebar__item--Top">
+        <sider :layout="layout" mode="horizontal" />
       </div>
       <div>
         <div v-if="showScreenfull || showUserInfo" class="navbar__wrap--right">
@@ -83,12 +83,6 @@
         <app-main />
       </el-scrollbar>
     </div>
-
-    <!-- setting -->
-    <setting />
-    <!-- setting -->
-
-    <backtop v-if="showBackTop" />
   </div>
 </template>
 
@@ -96,17 +90,13 @@
 import { mapGetters, mapActions } from 'vuex'
 
 import AppMain from '../components/AppMain'
-import TagsView from '../components/TagsView'
-import Logo from '../components/Logo'
-import Sider from '../components/Sider'
-import Hamburger from '../components/Hamburger'
-import Breadcrumb from '../components/Breadcrumb'
-import Screenfull from '../components/Screenfull'
-import UserInfo from '../components/UserInfo'
-import MenuTab from '../components/MenuTab'
-
-import Setting from '../components/Setting'
-import Backtop from '../components/Backtop'
+import TagsView from '_c/TagsView'
+import Logo from '_c/Logo'
+import Sider from '_c/Sider'
+import Hamburger from '_c/Hamburger'
+import Breadcrumb from '_c/Breadcrumb'
+import Screenfull from '_c/Screenfull'
+import UserInfo from '_c/UserInfo'
 export default {
   name: 'LeftTop',
   components: {
@@ -117,10 +107,7 @@ export default {
     UserInfo,
     AppMain,
     TagsView,
-    Logo,
-    Setting,
-    Backtop,
-    MenuTab
+    Logo
   },
   computed: {
     ...mapGetters([
@@ -133,9 +120,7 @@ export default {
       'showScreenfull',
       'showUserInfo',
       'showNavbar',
-      'fixedHeader',
-      'showBackTop',
-      'showMenuTab'
+      'fixedHeader'
     ]),
     classObj() {
       const obj = {}

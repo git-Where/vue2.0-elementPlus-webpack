@@ -1,7 +1,7 @@
 <template>
   <div v-if="!item.hidden" :style="{display: !isNest && layout === 'Top' ? 'inline-block' : 'block'}" :class="{'menu__top': layout === 'Top' && !isNest}">
     <template v-if="hasOneShowingChild(item.children,item) && (!onlyOneChild.children||onlyOneChild.noShowingChildren)&&!item.alwaysShow">
-      <el-menu-item :index="resolvePath(onlyOneChild.path, showMenuTab ? `${activeTab === '/dashboard' ? '' : activeTab}/${basePath}` : '')" :class="{'submenu-title-noDropdown':!isNest}">
+      <el-menu-item :index="resolvePath(onlyOneChild.path)" :class="{'submenu-title-noDropdown':!isNest}">
         <item v-if="onlyOneChild.meta" :icon="onlyOneChild.meta.icon||(item.meta&&item.meta.icon)" />
         <template #title>
           <span class="anticon-item">{{ onlyOneChild.meta.title }}</span>
@@ -14,7 +14,7 @@
       :popper-class="layout !== 'Top'
         ? 'nest-popper-menu'
         : 'top-popper-menu'"
-      :index="resolvePath(item.path, showMenuTab ? `${activeTab === '/dashboard' ? '' : activeTab}/${basePath}` : '')"
+      :index="resolvePath(item.path)"
     >
       <template #title>
         <item v-if="item.meta" :icon="item.meta && item.meta.icon" :title="item.meta.title" />
@@ -35,7 +35,6 @@
 import path from 'path'
 import { isExternal } from '@/utils/validate'
 import Item from './Item'
-import { mapGetters } from 'vuex'
 
 export default {
   name: 'SidebarItem',
@@ -65,12 +64,6 @@ export default {
     this.onlyOneChild = null
     return {}
   },
-  computed: {
-    ...mapGetters([
-      'showMenuTab',
-      'activeTab'
-    ])
-  },
   methods: {
     hasOneShowingChild(children = [], parent) {
       const showingChildren = children.filter(item => {
@@ -96,11 +89,11 @@ export default {
 
       return false
     },
-    resolvePath(routePath, otherPath) {
+    resolvePath(routePath) {
       if (isExternal(routePath)) {
         return routePath
       }
-      return path.resolve(otherPath || this.basePath, routePath)
+      return path.resolve(this.basePath, routePath)
     }
   }
 }

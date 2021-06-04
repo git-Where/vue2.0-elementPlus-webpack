@@ -60,7 +60,6 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import { loginApi, getRoleDetApi } from './api'
 export default {
   name: 'Login',
   data() {
@@ -101,25 +100,13 @@ export default {
         if (valid) {
           try {
             this.loading = true
-            // 模拟登录接口之后返回角色信息
-            const res = await loginApi({ data: this.form })
-            if (res) {
-              // 获取权限信息
-              const role = await getRoleDetApi({
-                params: {
-                  id: res.data.roleId
-                }
-              })
-              if (role) {
-                this.$wsCache.set(this.userInfo, Object.assign(this.form, role.data))
-                this.$store.dispatch('GenerateRoutes').then(() => {
-                  // 这个是重点，vuex里面的这个方法，就是用来过滤菜单权限的。
-                  this.$router.addRoutes(this.$store.getters.addRouters) // 动态添加可访问路由表
-                  this.$store.dispatch('SetIsAddRouters', true)
-                  this.$router.push({ path: this.redirect || '/' })
-                })
-              }
-            }
+            this.$wsCache.set(this.userInfo, this.form)
+            this.$store.dispatch('GenerateRoutes').then(() => {
+              // 这个是重点，vuex里面的这个方法，就是用来过滤菜单权限的。
+              this.$router.addRoutes(this.$store.getters.addRouters) // 动态添加可访问路由表
+              this.$store.dispatch('SetIsAddRouters', true)
+              this.$router.push({ path: this.redirect || '/' })
+            })
           } catch (e) {
             console.log(e)
             // TODO handle the exception

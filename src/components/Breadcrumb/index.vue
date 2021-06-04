@@ -78,16 +78,16 @@ export default {
     },
     getBreadcrumb() {
       // let matched = this.$route.matched.filter(item => item.name)
-      const matched = this.getBreadcrumbRoutes().filter(item => item.meta && item.meta.title)
-      // const first = matched[0]
-      // if (first && first.name !== 'Dashboard') {
-      //   matched = [
-      //     {
-      //       path: '/dashboard',
-      //       meta: { title: '首页', icon: 'dashboard' }
-      //     }
-      //   ].concat(matched)
-      // }
+      let matched = this.getBreadcrumbRoutes().filter(item => item.meta && item.meta.title)
+      const first = matched[0]
+      if (first && first.name !== 'Dashboard') {
+        matched = [
+          {
+            path: '/dashboard',
+            meta: { title: '首页', icon: 'dashboard' }
+          }
+        ].concat(matched)
+      }
       this.levelList = matched.filter(item => item.meta && item.meta.title && item.meta.breadcrumb !== false)
     },
     pathCompile(path) {
@@ -98,10 +98,6 @@ export default {
     },
     handleLink(item) {
       const { redirect, path } = item
-      // 如果已经是当前路由，不重定向，不然控制台会报错。
-      if (redirect === this.$route.fullPath) {
-        return
-      }
       if (redirect) {
         this.$router.push(redirect)
         return

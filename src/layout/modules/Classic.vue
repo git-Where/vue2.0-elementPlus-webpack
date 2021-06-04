@@ -1,13 +1,10 @@
 <template>
   <div :class="classObj" class="app__wrap">
     <!-- Classic -->
-    <div v-if="showMenuTab" class="menu__tab">
-      <menu-tab />
-    </div>
     <div
       id="sidebar__wrap"
       class="sidebar__wrap"
-      :class="{'sidebar__wrap--collapsed': collapsed, 'sidebar__wrap--tab': showMenuTab}"
+      :class="{'sidebar__wrap--collapsed': collapsed}"
     >
       <logo
         v-if="showLogo && layout === 'Classic'"
@@ -19,9 +16,7 @@
     <div
       class="main__wrap"
       :class="{
-        'main__wrap--collapsed': collapsed,
-        'main__wrap--tab': showMenuTab,
-        'main__wrap--tab--collapsed': showMenuTab && collapsed
+        'main__wrap--collapsed': collapsed
       }"
     >
       <el-scrollbar
@@ -36,10 +31,7 @@
           class="header__wrap"
           :class="{
             'header__wrap--fixed': fixedHeader,
-            'header__wrap--tab--fixed': fixedHeader && showMenuTab,
-            'header__wrap--collapsed': fixedHeader && collapsed,
-            'header__wrap--tab': showMenuTab,
-            'header__wrap--tab--collapsed': showMenuTab && collapsed
+            'header__wrap--collapsed': fixedHeader && collapsed
           }"
         >
           <div
@@ -70,12 +62,6 @@
         <app-main />
       </el-scrollbar>
     </div>
-
-    <!-- setting -->
-    <setting />
-    <!-- setting -->
-
-    <backtop v-if="showBackTop" />
   </div>
 </template>
 
@@ -83,17 +69,13 @@
 import { mapGetters, mapActions } from 'vuex'
 
 import AppMain from '../components/AppMain'
-import TagsView from '../components/TagsView'
-import Logo from '../components/Logo'
-import Sider from '../components/Sider'
-import Hamburger from '../components/Hamburger'
-import Breadcrumb from '../components/Breadcrumb'
-import Screenfull from '../components/Screenfull'
-import UserInfo from '../components/UserInfo'
-import MenuTab from '../components/MenuTab'
-
-import Setting from '../components/Setting'
-import Backtop from '../components/Backtop'
+import TagsView from '_c/TagsView'
+import Logo from '_c/Logo'
+import Sider from '_c/Sider'
+import Hamburger from '_c/Hamburger'
+import Breadcrumb from '_c/Breadcrumb'
+import Screenfull from '_c/Screenfull'
+import UserInfo from '_c/UserInfo'
 export default {
   name: 'Classic',
   components: {
@@ -102,12 +84,9 @@ export default {
     Breadcrumb,
     Screenfull,
     UserInfo,
-    MenuTab,
     AppMain,
     TagsView,
-    Logo,
-    Setting,
-    Backtop
+    Logo
   },
   computed: {
     ...mapGetters([
@@ -120,9 +99,7 @@ export default {
       'showScreenfull',
       'showUserInfo',
       'showNavbar',
-      'fixedHeader',
-      'showBackTop',
-      'showMenuTab'
+      'fixedHeader'
     ]),
     classObj() {
       const obj = {}

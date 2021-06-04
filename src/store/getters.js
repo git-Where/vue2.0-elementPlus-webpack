@@ -15,7 +15,6 @@ const getters = {
   userInfo: state => state.app.userInfo,
   greyMode: state => state.app.greyMode,
   showBackTop: state => state.app.showBackTop,
-  showMenuTab: state => state.app.showMenuTab,
 
   // tagsView
   visitedViews: state => state.tagsView.visitedViews,
@@ -24,9 +23,6 @@ const getters = {
   // permission
   routers: state => state.permission.routers,
   addRouters: state => state.permission.addRouters,
-  isAddRouters: state => state.permission.isAddRouters,
-  menuTabRouters: state => state.permission.menuTabRouters,
-  activeTab: state => state.permission.activeTab
+  isAddRouters: state => state.permission.isAddRouters
 }
-
 export default getters

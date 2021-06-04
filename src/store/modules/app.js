@@ -14,8 +14,7 @@ const app = {
     logoTitle: 'vue-ele-admin', // logo标题
     userInfo: 'userInfo', // 登录信息存储字段-建议每个项目换一个字段，避免与其他项目冲突
     greyMode: false, // 是否开始灰色模式，用于特殊悼念日
-    showBackTop: true, // 是否显示回到顶部
-    showMenuTab: false // 是否固定一级菜单
+    showBackTop: true // 是否显示回到顶部
   },
   mutations: {
     SET_COLLAPSED: (state, collapsed) => {
@@ -59,9 +58,6 @@ const app = {
     },
     SET_SHOWBACKTOP: (state, showBackTop) => {
       state.showBackTop = showBackTop
-    },
-    SET_SHOWMENUTAB: (state, showMenuTab) => {
-      state.showMenuTab = showMenuTab
     }
   },
   actions: {
@@ -106,9 +102,6 @@ const app = {
     },
     SetShowBackTop({ commit }, showBackTop) {
       commit('SET_SHOWBACKTOP', showBackTop)
-    },
-    SetShowMenuTab({ commit }, showMenuTab) {
-      commit('SET_SHOWMENUTAB', showMenuTab)
     }
   }
 }

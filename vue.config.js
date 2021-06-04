@@ -121,14 +121,16 @@ module.exports = {
 
       config.optimization.runtimeChunk('single')
 
-      // 预加载
-      config.plugin(`preload`).tap(() => [{
-        rel: 'preload',
-        fileBlacklist: [/\.map$/, /hot-update\.js$/, /runtime\..*\.js$/],
-        include: 'initial'
-      }])
-      
-      config.plugins.delete(`prefetch`)
+      Object.keys(entryPages).forEach(page => {
+        // 预加载
+        config.plugin(`preload-${page}`).tap(() => [{
+          rel: 'preload',
+          fileBlacklist: [/\.map$/, /hot-update\.js$/, /runtime\..*\.js$/],
+          include: 'initial'
+        }])
+
+        config.plugins.delete(`prefetch-${page}`)
+      })
     })
   },
   configureWebpack: {

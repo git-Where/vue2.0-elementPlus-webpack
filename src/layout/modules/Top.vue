@@ -58,12 +58,6 @@
         <app-main />
       </el-scrollbar>
     </div>
-
-    <!-- setting -->
-    <setting />
-    <!-- setting -->
-
-    <backtop v-if="showBackTop" />
   </div>
 </template>
 
@@ -71,14 +65,11 @@
 import { mapGetters } from 'vuex'
 
 import AppMain from '../components/AppMain'
-import TagsView from '../components/TagsView'
-import Logo from '../components/Logo'
-import Sider from '../components/Sider'
-import Screenfull from '../components/Screenfull'
-import UserInfo from '../components/UserInfo'
-
-import Setting from '../components/Setting'
-import Backtop from '../components/Backtop'
+import TagsView from '_c/TagsView'
+import Logo from '_c/Logo'
+import Sider from '_c/Sider'
+import Screenfull from '_c/Screenfull'
+import UserInfo from '_c/UserInfo'
 export default {
   name: 'Top',
   components: {
@@ -87,9 +78,7 @@ export default {
     UserInfo,
     AppMain,
     TagsView,
-    Logo,
-    Setting,
-    Backtop
+    Logo
   },
   data() {
     return {
@@ -105,8 +94,7 @@ export default {
       'showScreenfull',
       'showUserInfo',
       'showNavbar',
-      'fixedHeader',
-      'showBackTop'
+      'fixedHeader'
     ]),
     classObj() {
       const obj = {}
